@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ doc.name }}</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>{{ doc.name }}</h1>
+
+    {% for sec in doc.sections %}
+    <h2>{{ sec.title }}</h2>
+    {% for cont in sec.contents recursive %}
+    {% if cont.__class__.__name__ == 'Section' %}
+    <h2>{{ cont.title }}</h2>
+    {{ loop(cont) }}
+    {% else %}
+    <p>{{ cont.text }}</p>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+
+</body>
+
+</html>
