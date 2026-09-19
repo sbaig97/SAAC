@@ -1,0 +1,6 @@
+{
+  "id": "token_2",
+  "name": "ESN",
+  "description": "Engine Serial Number",
+  "type": "Number"
+}
