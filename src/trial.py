@@ -1,24 +1,12 @@
-from components.tokens import Token
+from pathlib import Path
+
+from architecture_factory import ArchitectureFactory
 
 
 def trial():
 
-    tokens = []
-    file_path = ["./architecture/tokens/asn.json", "./architecture/tokens/esn.json"]
-
-    for fp in file_path:
-        with open(fp, "r") as file:
-            file_content = file.read()
-
-        tokens.append(Token.generateFromJson(json_definition=file_content))
-
-    for t in tokens:
-        print(
-            t.id,
-            t.name,
-            t.type,
-            t.description,
-        )
+    arf = ArchitectureFactory()
+    ar = arf.generateArchitecture("Example Architecture", Path("./architecture"))
 
 
 if __name__ == "__main__":

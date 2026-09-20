@@ -954,14 +954,12 @@ name = "software-architecture-as-code"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "jinja2" },
     { name = "pydantic" },
     { name = "strictdoc" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "jinja2", specifier = ">=3.1.6" },
     { name = "pydantic", specifier = ">=2.13.5" },
     { name = "strictdoc", specifier = ">=0.30.1" },
 ]

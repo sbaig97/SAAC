@@ -1,0 +1,6 @@
+{
+  "id": "token_KernelIdent",
+  "name": "KernelIdent",
+  "description": "Part number for the Kernel.",
+  "type": "String"
+}

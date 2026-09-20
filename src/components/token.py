@@ -1,11 +1,22 @@
-from pydantic import BaseModel
-
-from enums.token_types import TokenType, StringToken, NumberToken, BooleanToken
 import json
 
+from pydantic import BaseModel
 
-class Token(BaseModel):
+from enums.token_types import BooleanToken, NumberToken, StringToken, TokenType
+
+
+class Node(BaseModel):
     id: str
+
+
+class Service(Node):
+    name: str
+    description: str
+    scope: str
+    location: str
+
+
+class Token(Node):
     name: str
     description: str
     type: type[TokenType]
