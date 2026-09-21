@@ -1,6 +1,10 @@
 {
   "id": "token_ESN",
-  "name": "ESN",
-  "description": "Engine Serial Number",
-  "type": "Number"
+  "label": "ESN",
+  "graph_object": "node",
+  "class": "Token",
+  "properties": {
+    "description": "Engine Serial Number",
+    "type": "Number"
+  }
 }

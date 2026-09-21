@@ -1,0 +1,10 @@
+{
+  "id": "token_swPN",
+  "label": "softwarePartNumber",
+  "graph_object": "node",
+  "class": "Token",
+  "properties": {
+    "description": "Software Part Number",
+    "type": "String"
+  }
+}

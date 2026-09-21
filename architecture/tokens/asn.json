@@ -1,6 +1,10 @@
 {
   "id": "token_ASN",
-  "name": "ASN",
-  "description": "Aircraft Serial Number",
-  "type": "String"
+  "label": "ASN",
+  "graph_object": "node",
+  "class": "Token",
+  "properties": {
+    "description": "Aircraft Serial Number",
+    "type": "String"
+  }
 }

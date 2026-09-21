@@ -1,0 +1,10 @@
+{
+  "id": "token_write_swPN",
+  "label": "",
+  "graph_object": "edge",
+  "class": "WriteToken",
+  "properties": {
+    "writer_id": "token_ASN",
+    "token_id": "token_swPN"
+  }
+}

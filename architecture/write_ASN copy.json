@@ -1,0 +1,10 @@
+{
+  "id": "token_write_ASN",
+  "label": "",
+  "graph_object": "edge",
+  "class": "WriteToken",
+  "properties": {
+    "writer_id": "token_ESN",
+    "token_id": "token_ASN"
+  }
+}

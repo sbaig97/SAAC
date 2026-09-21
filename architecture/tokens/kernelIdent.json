@@ -1,6 +1,10 @@
 {
   "id": "token_KernelIdent",
-  "name": "KernelIdent",
-  "description": "Part number for the Kernel.",
-  "type": "String"
+  "label": "KernelIdent",
+  "graph_object": "node",
+  "class": "Token",
+  "properties": {
+    "description": "Part number for the Kernel.",
+    "type": "String"
+  }
 }
